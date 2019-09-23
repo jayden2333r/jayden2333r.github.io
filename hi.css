@@ -1,0 +1,29 @@
+body{
+  background-image:url("Purple background.jpg");
+  background-size: auto;
+  background-color:
+
+}
+h1{
+    color:purple;
+    text-align:center;
+    border-color: gold;
+    border-width: 10px;
+    border-style: double;
+     font:times;
+}
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+  h3{
+    color:White
+  }
+  #love{
+    width:50%;
+    height:50%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
