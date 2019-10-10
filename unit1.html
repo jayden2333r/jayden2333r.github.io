@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My portfolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    return false;
+});
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+	<link href="hi.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
+		<h1>All about me</h1>
+		<img id="love" src="Ainz and guards.jpg" alt="Ainz">
+		<div class="container">
+           <nav class="navbar navbar-inverse">
+               <div class="navbar-header">
+               <!-- Button for user to collapse or uncollapse the navbar -->
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navLinks">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+                <!--   <a class="navbar-brand" href="#">Overlord</a> -->
+               </div>
+               <ul class="nav navbar-nav" id="navLinks">
+								 <li><a class="navbar-brand" href="#">Overlord</a</li>
+                   <li class=""><a href="#">Anime</a></li>
+                   <li><a href="">Art</a></li>
+                   <li><a href="">danceMoves</a></li>
+                   <li><a href="">VideoGames</a></li>
+                   <li><a href="">writing</a></li>
+									 <br>
+									 <h1>Anime<h1>
+									 <h3>One of my favorite animes is the anime Hellsing Ultimate which is about
+										 Alucard and the Hellsing orginization.Alucard is an immortal vampire previously
+										 vlad the impaler. After being sealed by Gabriel Van Hellsing he pleages
+										 alegiance to the ancestor of his enemy Integra.Now he is a hitman for the monster
+										 hunting Hellsing organization.<h3>
+									<image src="Hellsing.jpg" Alt="alucard">
+
+               </ul>
+           </nav>
+       </div>
+										 
+	<br>
+	<button onclick="document.getElementById('myImage').src='full-moon.jpg"style="width:100px">blue moon</button>
+
+	<img id="myImage" src="full-moon.jpg" style="width:100px;">
+
+	<button onclick="document.getElementById('myImage').src='blood moon.jpeg'">blood moon</button>
+
+   
+
+	</body>
+</html>
