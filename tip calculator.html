@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/javascript" href="Tipcalc.js">
+		<title>Tip Calculator</title>
+		<style>
+		.center {   margin: auto;   width: 20%;   border: 3px;   padding: 10px;   background-color: white;   border: 2px solid blue;   border-radius: 58px; }
+		body {background-color: brown;}
+		.cntr{
+  text-align: center;
+  background-color:#310000;
+  color:white;
+
+}
+button {
+  background-color: red
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+		</style>
+	</head>
+
+	<body>
+		<h2>Tip Calculator<h2>
+			<div class="w3-container w3-red" id="container">         <div class="center" id="calculator">
+			<form action="/action_page.php">
+				<div class="cntr">
+					<h1>Tip Calculator</h1>
+				</div>
+<p> How much was your bill?: </p>
+$<input type="text" name="FirstName" id="billamt" placeholder="Bill Amount">
+<br>
+<p> How was your service?:</p>
+<select  id="serviceQual">
+	<option disabled selected value="0">--Choose an Opton --</option>
+  <option value="5%-horrible">5%-horrible</option>
+  <option value="10%-bad">10%-bad</option>
+  <option value="15%-Good">15%-Good</option>
+  <option value="25%-Great">25%-Great</option>
+	<option value="40%-Fantastic">45%-Fantastic</option>
+</select>
+<br>
+
+</form>
+
+<p> How many people are sharing the bill?:  </p>
+<input type="text" name="LastName" id="peopleamt" placeholder="Number of people"><br>
+
+ <button type="button" id="calculate">Calculate!</button>
+
+</div>
+
+<div id="totalTip">
+	 <sup>$</sup><span id="tip">0.00</span>
+	 <small id="each">each</small>
+ </div>
+
+ </div>
+
+ <script type="text/javascript" src="Tipcalc.js"></script>
+
+	</body>
+</html>
